@@ -12,15 +12,16 @@ const Button = ({
 
   const variants = {
     primary: "bg-blue-500 hover:bg-blue-600 focus:ring-slate-500 text-white",
-    secondary:
-      "bg-gray-200 hover:invert focus:ring-gray-500 text-gray-800",
+    secondary: "bg-gray-200 hover:invert focus:ring-gray-500 text-gray-800",
     danger: "bg-red-500 hover:bg-red-600 focus:ring-red-500 text-white",
+    white: "bg-[#fff] border-none rounded hover:bg-[#f1f1f1] text-white",
   };
 
   const sizes = {
     small: "px-2 py-1 text-sm",
     medium: "px-2 py-2",
     large: "px-6 py-3 text-lg",
+    custom: "px-[10px] py-[10px]"
   };
 
   const buttonStyles = `
