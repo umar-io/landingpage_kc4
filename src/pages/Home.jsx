@@ -56,7 +56,7 @@ const Home = () => {
               <img src={rightArrow} alt="Next" className="w-4" />
             </Button>
           </div>
-          <div className="mt-[50px] sm:mb-[50px] text-3xl font-thin">
+          <div className="mt-[50px] lg:mb-0 mb-[50px] text-3xl font-thin">
             0{carouselCount} / 02
           </div>
         </article>
