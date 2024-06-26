@@ -72,8 +72,8 @@ const Home = () => {
       </section>
 
       {/* about section */}
-      <section className="flex sm:flex-col pt-[30px] pb-[30px] bg-[#c4c4c4] w-full h-[fit-content] gap-[40px] mt-[50px] lg:pl-[150px] lg:pr-[150px] lg:flex-row ]">
-        <aside className="w-[50%] flex flex-row gap-[20px]">
+      <section className="flex flex-col lg:flex-row sm:flex-col lg:pt-[30px] pb-[30px] bg-[#c4c4c4]      w-full h-[fit-content] gap-[40px] mt-[50px] lg:pl-[150px] lg:pr-[150px] sm:align-center p-[20px]">
+        <aside className="w-full lg:w-[50%] flex flex-row gap-[20px]">
           <div className="flex flex-col gap-[10px]">
             <img src={grid1} alt="" className="max-w-full h-[50%]" />
             <img src={grid2} alt="" className="max-w-full h-[50%]" />
@@ -82,7 +82,7 @@ const Home = () => {
             <img src={homeBanner0} alt="" className="max-w-full h-auto" />
           </div>
         </aside>
-        <article className="w-[50%] flex flex-col gap-[20px]">
+        <article className="w-full lg:w-[50%] flex flex-col gap-[20px]">
           <p>
             Aperiam, porro placeat. Nemo consequatur quaerat soluta minus eum at
             eos facilis aspernatur omnis quos, nobis sapiente praesentium
