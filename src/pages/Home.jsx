@@ -105,6 +105,28 @@ const Home = () => {
           </Button>
         </article>
       </section>
+      <section className="mt-[50px] w-full]">
+        <h1 className="text-[20px]  lg:text-[40px] capitalize text-[#9ca3af] font-thin w-2/4">
+          main focus/mission statement
+        </h1>
+        <article className="flex flex-row gap-[20px] justify-center items-center">
+          <div className="w-1/2 flex flex-row justify-center items-center gap-[10px]">
+            <h1 className="text-[50px] lg:text-[100px] text-[#9ca3af] font-bold">1</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              efficitur, lectus et facilisis placerat
+            </p>
+          </div>
+          <div className="w-1/2 flex flex-row justify-center items-center gap-[10px]">
+            <h2 className="text-[50px] lg:text-[100px] text-[#9ca3af] font-bold">2</h2>
+            <p className="text-ellipsis">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              efficitur, lectus et facilisis placerat, magna mauris porttitor
+              tortor, a auctor est felis ut nisl.
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
   );
 };
