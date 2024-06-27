@@ -4,6 +4,11 @@ import homeBanner1 from "../assets/Rectangle 6.png";
 import grid1 from "../assets/Rectangle 8.png";
 import grid2 from "../assets/Rectangle 9.png";
 import grid3 from "../assets/Rectangle 10.png";
+import project2 from "../assets/image 15.png";
+import project3 from "../assets/image 16.png";
+import project4 from "../assets/image 17.png";
+import project5 from "../assets/image 18.png";
+import project1 from "../assets/Rectangle 12.png";
 import rightArrow from "../assets/Right Arrow.png";
 import Button from "../components/Button";
 import leftArrow from "../assets/Left Arrow.png";
@@ -111,14 +116,18 @@ const Home = () => {
         </h1>
         <article className="flex flex-row gap-[20px] justify-center items-center">
           <div className="w-1/2 flex flex-row justify-center items-center gap-[10px]">
-            <h1 className="text-[50px] lg:text-[100px] text-[#9ca3af] font-bold">1</h1>
+            <h1 className="text-[50px] lg:text-[100px] text-[#9ca3af] font-bold">
+              1
+            </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               efficitur, lectus et facilisis placerat
             </p>
           </div>
           <div className="w-1/2 flex flex-row justify-center items-center gap-[10px]">
-            <h2 className="text-[50px] lg:text-[100px] text-[#9ca3af] font-bold">2</h2>
+            <h2 className="text-[50px] lg:text-[100px] text-[#9ca3af] font-bold">
+              2
+            </h2>
             <p className="text-ellipsis">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               efficitur, lectus et facilisis placerat, magna mauris porttitor
@@ -126,6 +135,34 @@ const Home = () => {
             </p>
           </div>
         </article>
+      </section>
+      <section className="w-full flex flex-col mt-[50px] gap-[20px] relative">
+        <h3>our projects</h3>
+        <div className="flex lg:flex-row flex-col mt-[30px] w-full gap-[20px] justify-center">
+          <div className=" w-full lg:w-[50%] relative">
+            <img
+              src={project1}
+              alt=""
+              width="100%"
+              className="rounded brightness-50"
+            />
+            <article className="absolute py-2.5 top-[40px] left-[30px] w-1/3">
+              <h3 className=" lg:text-[40px] text-[#fff] z-10">
+                Sample Project
+              </h3>
+              <p>view more →</p>
+            </article>
+          </div>
+          <img src={project2} alt="" className="rounded lg:w-[50%] w-full" />
+        </div>
+        <div className="flex lg:flex-row flex-col w-full gap-[20px] justify-center">
+          <img src={project3} alt="" className="rounded" />
+          <img src={project4} alt="" className="rounded" />
+          <img src={project5} alt="" className="rounded" />
+        </div>
+        <Button variant="dark" size="medium" className="w-full lg:w-[150px] font-thin font-white hover:font-[#000] mt-[20px] lg:absolute bottom-[-70px] right-0">
+            View Project →
+        </Button>
       </section>
     </main>
   );

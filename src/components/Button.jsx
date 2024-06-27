@@ -15,6 +15,7 @@ const Button = ({
     secondary: "bg-gray-200 hover:invert focus:ring-gray-500 text-gray-800",
     danger: "bg-red-500 hover:bg-red-600 focus:ring-red-500 text-white",
     white: "bg-[#fff] border-none rounded hover:bg-[#f1f1f1] text-white",
+    dark: "bg-[#000] border-none !text-[#fff] rounded hover:bg-[#fff] font-[#000] ",
   };
 
   const sizes = {

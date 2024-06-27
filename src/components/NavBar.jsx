@@ -107,7 +107,7 @@ const NavBar = () => {
 
       {/* Mobile menu, show/hide based on menu state. */}
       <div
-        className={`${isMenuOpen ? "block" : "hidden"} sm:hidden bg-[#eee] w-[60%] h-full flex absolute inset-y-[70px] right-0 z-10 transition transform ease-in-out delay-150 rounded-tl-[5px] pt-[20px] gap-[50px]`}
+        className={`${isMenuOpen ? "block" : "hidden"} sm:hidden  bg-[#eee] w-[60%] h-screen flex absolute inset-y-[70px] right-0 z-10 transition transform ease-in-out delay-150 rounded-tl-[5px] pt-[20px] gap-[50px]`}
         id="mobile-menu" 
       >
         <div className="px-2 pt-2 pb-3 space-y-1 flex justify-end">
