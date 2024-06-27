@@ -12,6 +12,7 @@ import project1 from "../assets/Rectangle 12.png";
 import rightArrow from "../assets/Right Arrow.png";
 import Button from "../components/Button";
 import leftArrow from "../assets/Left Arrow.png";
+import { Link } from "react-router-dom";
 
 const useDocumentTitle = (title) => {
   useEffect(() => {
@@ -136,10 +137,12 @@ const Home = () => {
           </div>
         </article>
       </section>
-      <section className="w-full flex flex-col mt-[50px] gap-[20px] relative">
-        <h3>our projects</h3>
+      <section className="w-full flex flex-col mt-[50px] gap-[10px] relative h-[fit-content]">
+        <h3 className="text-[#9ca3af] lg:text-[40px] capitalize text-[20px]">
+          our projects
+        </h3>
         <div className="flex lg:flex-row flex-col mt-[30px] w-full gap-[20px] justify-center">
-          <div className=" w-full lg:w-[50%] relative">
+          <div className="w-full lg:w-[50%] relative">
             <img
               src={project1}
               alt=""
@@ -150,19 +153,28 @@ const Home = () => {
               <h3 className=" lg:text-[40px] text-[#fff] z-10">
                 Sample Project
               </h3>
-              <p>view more →</p>
+              <Link className="text-[#fff] capitalize gap-[5px]" to="projects/">
+                view more →
+              </Link>
             </article>
           </div>
           <img src={project2} alt="" className="rounded lg:w-[50%] w-full" />
         </div>
         <div className="flex lg:flex-row flex-col w-full gap-[20px] justify-center">
-          <img src={project3} alt="" className="rounded" />
-          <img src={project4} alt="" className="rounded" />
-          <img src={project5} alt="" className="rounded" />
+          <img src={project3} alt="" className="rounded lg:w-[30%]" />
+          <img src={project4} alt="" className="rounded lg:w-[40%]" />
+          <img src={project5} alt="" className="rounded lg:w-[30%]" />
         </div>
-        <Button variant="dark" size="medium" className="w-full lg:w-[150px] font-thin font-white hover:font-[#000] mt-[20px] lg:absolute bottom-[-70px] right-0">
-            View Project →
+        <Button
+          variant="dark"
+          size="medium"
+          className="w-full text-[#fff] hover:text-[#000] lg:w-[150px] font-thin mt-[20px] lg:absolute bottom-[-70px] right-0"
+        >
+          View Project →
         </Button>
+      </section>
+      <section>
+        
       </section>
     </main>
   );
