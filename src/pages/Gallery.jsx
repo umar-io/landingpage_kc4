@@ -22,7 +22,7 @@ const Gallery = (props) => {
   const isNextDisabled = carouselCount === 5;
 
   return (
-    <section className="px-[20px] gap-y-[20px] sm:gap-x-[20px] w-full h-full flex flex-row flex-wrap lg:px-[75px] lg:gap-y-[40px]">
+    <section className="px-[20px] w-full h-full flex flex-row flex-wrap lg:px-[75px] lg:gap-y-[40px]">
       {newImages}
       <article  className="flex flex-col justify-start gap-[20px]">
       <div className="controller mt-[20px] flex gap-4">
