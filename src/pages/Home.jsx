@@ -10,8 +10,8 @@ import project3 from "../assets/image 16.png";
 import project4 from "../assets/image 17.png";
 import project5 from "../assets/image 18.png";
 import project1 from "../assets/Rectangle 12.png";
-import rightArrow from "../assets/Right Arrow.png";
 import Button from "../components/Button";
+import rightArrow from "../assets/Right Arrow.png";
 import leftArrow from "../assets/Left Arrow.png";
 import { Link } from "react-router-dom";
 
