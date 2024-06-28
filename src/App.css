@@ -12,3 +12,22 @@
 .navtransition{
     transition: all ease-in-out 1s;
 }
+
+.input-field{
+    width: 80%;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.message{
+    height: 150px;
+    resize: none;
+}
+
+
+
+@media (max-width: 678px) {
+    .input-field{
+        width: 100%;
+    }
+}

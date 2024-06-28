@@ -4,6 +4,7 @@ import homeBanner1 from "../assets/Rectangle 6.png";
 import grid1 from "../assets/Rectangle 8.png";
 import grid2 from "../assets/Rectangle 9.png";
 import grid3 from "../assets/Rectangle 10.png";
+import person from "../assets/image 12.png";
 import project2 from "../assets/image 15.png";
 import project3 from "../assets/image 16.png";
 import project4 from "../assets/image 17.png";
@@ -39,6 +40,35 @@ const Home = () => {
   const isNextDisabled = carouselCount === 2;
 
   const currentImage = images[carouselCount - 1];
+
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phoneNumber: "",
+    email: "",
+    interest: "",
+    message: "",
+  });
+
+  const handleChange = (event) => {
+    setFormData(function (formData) {
+      return {
+        ...formData,
+        [event.target.name]: event.target.value,
+      };
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setFormData({
+      fullName: "",
+      phoneNumber: "",
+      email: "",
+      interest: "",
+      message: "",
+    });
+    alert("email sent");
+  };
 
   return (
     <main className="px-[20px] lg:px-[75px] flex flex-col ">
@@ -173,8 +203,70 @@ const Home = () => {
           View Project →
         </Button>
       </section>
-      <section>
-        
+      <section className="flex flex-col w-full mt-[120px] gap-[40px]">
+        <h1 className="text-[#9ca3af] capitalize text-[30px]">contact us</h1>
+        <article className="flex flex-col-reverse lg:flex-row gap-[30px]">
+          <div className="w-full lg:w-[40%] gap-[10px]">
+            <form action="" className="flex flex-col gap-[10px]">
+              <input
+                type="text"
+                placeholder="Name"
+                className="input-field rounded outline-none"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Phone Number"
+                className="input-field rounded outline-none"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email*"
+                className="input-field rounded outline-none"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Interested in"
+                className="input-field rounded outline-none"
+                name="interest"
+                value={formData.interest}
+                onChange={handleChange}
+                required
+              />
+              <textarea
+                type="text"
+                placeholder="Message*"
+                className="input-field message pt-[10px] rounded outline-none"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+            </form>
+            <Button
+              variant="dark"
+              size="medium"
+              className="w-full text-[#fff] hover:text-[#000] lg:w-[150px] font-thin mt-[20px]"
+              onClick={handleSubmit}
+            >
+              Send Email →
+            </Button>
+          </div>
+          <div className=" w-full lg:w-[60%]">
+            <img src={person} alt="" />
+          </div>
+        </article>
       </section>
     </main>
   );
